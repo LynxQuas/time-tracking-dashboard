@@ -4,11 +4,7 @@ const SideCard = (props) => {
   return (
     <div className="sidecard__container">
       <div className={`sidecard ${props.title}`}>
-        <img
-          src={`../public/assets/icon-${props.title}.png`}
-          alt=""
-          className="work__logo"
-        />
+        <img src={`/icon-${props.title}.svg`} alt="" className="work__logo" />
       </div>
       <div className="sidecard__lower">
         <div className="header__container">
@@ -17,7 +13,7 @@ const SideCard = (props) => {
             <path
               d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
               fill="#BBC0FF"
-              fill-rule="evenodd"
+              fillRule="evenodd"
             />
           </svg>
         </div>
