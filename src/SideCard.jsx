@@ -1,10 +1,16 @@
 import "./sidecard.css";
 
 const SideCard = (props) => {
+  const data = props.data;
+  console.log(props.data);
   return (
     <div className="sidecard__container">
       <div className={`sidecard ${props.title}`}>
-        <img src={`/icon-${props.title}.svg`} alt="" className="work__logo" />
+        <img
+          src={`/icon-${props.title}.svg`}
+          alt="icon"
+          className="work__logo"
+        />
       </div>
       <div className="sidecard__lower">
         <div className="header__container">
@@ -18,9 +24,11 @@ const SideCard = (props) => {
           </svg>
         </div>
         <div className="text__container">
-          <p className="hours">{props.timeframe.weekly.current}hrs</p>
+          <p className="hours">{props.timeframe[data].current}hrs</p>
           <p className="text">
-            last week - {props.timeframe.weekly.previous}hrs
+            last{" "}
+            {data === "daily" ? data.slice(0, -3) + "y" : data.slice(0, -2)} -{" "}
+            {props.timeframe[data].previous}hrs
           </p>
         </div>
       </div>

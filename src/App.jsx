@@ -111,20 +111,17 @@ const data = [
 
 const App = () => {
   const [time, setTime] = useState(data);
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
+  const [cat, setCat] = useState("daily");
 
-  // const fetchData = async () => {
-  //   const data = await fetch("../data.json");
-  //   const response = await data.json();
-  //   setTime(response);
-  // };
+  const onClickHandler = (e) => {
+    setCat(e);
+  };
 
   return (
     <main className="main">
-      <MainCard data={time} />
-      <Container data={time} />
+      <MainCard data={time} click={onClickHandler} />
+      <Container data={time} cata={cat} />
+
       <div className="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">

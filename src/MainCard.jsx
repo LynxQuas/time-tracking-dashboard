@@ -1,6 +1,10 @@
 import "./maincard.css";
 
-const MainCard = () => {
+const MainCard = (props) => {
+  const clickHandler = (e) => {
+    props.click(e.target.textContent);
+  };
+
   return (
     <div className="maincard__container">
       <div className="maincard">
@@ -14,10 +18,10 @@ const MainCard = () => {
         </div>
       </div>
 
-      <div className="maincard__lower">
-        <p>Daily</p>
-        <p>Weekly</p>
-        <p>Monthly</p>
+      <div className="maincard__lower" onClick={clickHandler}>
+        <p>daily</p>
+        <p>weekly</p>
+        <p>monthly</p>
       </div>
     </div>
   );
