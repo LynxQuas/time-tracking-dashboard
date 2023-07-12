@@ -5,7 +5,7 @@ const SideCard = (props) => {
     <div className="sidecard__container">
       <div className={`sidecard ${props.title}`}>
         <img
-          src={requrire(`./assets/icon-${props.title}.svg`)}
+          src={`../public/assets/icon-${props.title}.png`}
           alt=""
           className="work__logo"
         />

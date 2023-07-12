@@ -5,7 +5,7 @@ const MainCard = () => {
     <div className="maincard__container">
       <div className="maincard">
         <div className="img__container">
-          <img src={require("./assets/image-jeremy.png")} className="image" />
+          <img src="../public/assets/image-jeremy.png" className="image" />
         </div>
 
         <div className="user__info">
