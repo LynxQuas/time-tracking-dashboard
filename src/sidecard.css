@@ -11,17 +11,50 @@
   width: 3rem;
   left: 70%;
 }
+
 .sidecard {
   width: 100%;
   border-radius: 0.7rem 0.7rem 0 0;
   height: 3rem;
+}
+
+.Work {
   background-color: hsl(15, 100%, 70%);
+}
+
+/* - Light red (work): hsl(15, 100%, 70%)
+- Soft blue (play): 
+- Light red (study): 
+- Lime green (exercise): 
+- Violet (social): 
+- Soft orange (self care):  */
+.Exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.Play {
+  background-color: hsl(195, 74%, 62%);
+}
+
+.Study {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.Social {
+  background-color: hsl(264, 64%, 52%);
+}
+.selfCare {
+  background-color: hsl(43, 84%, 65%);
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header__container > img:hover {
+  cursor: pointer;
 }
 
 .sidecard__lower {
@@ -37,6 +70,15 @@
   z-index: 1;
 }
 
+.sidecard__lower:hover {
+  background-color: hsl(235, 45%, 40%);
+  cursor: pointer;
+}
+
+.sidecard__lower:hover .text {
+  color: white;
+}
+
 .text__container {
   line-height: 2rem;
 }
@@ -49,4 +91,19 @@
 
 .text {
   color: hsl(235, 45%, 61%);
+}
+
+@media only screen and (max-width: 600px) {
+  .sidecard__container {
+    width: 90%;
+  }
+
+  .sidecard {
+    height: 4rem;
+  }
+
+  .text__container {
+    display: flex;
+    justify-content: space-between;
+  }
 }

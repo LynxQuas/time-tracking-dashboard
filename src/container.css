@@ -5,3 +5,9 @@
   justify-content: space-around;
   gap: 1.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}

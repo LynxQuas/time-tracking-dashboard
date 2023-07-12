@@ -39,16 +39,27 @@ The designs were created to the following widths:
 - Weights: 300, 400, 500
 
 Report for Jeremy Robson Daily Weekly Monthly Work 5hrs
+
 <!-- daily -->
+
 Previous - 7hrs
+
 <!-- daily -->
+
 32hrs
+
 <!-- weekly -->
+
 Previous - 36hrs
+
 <!-- weekly -->
+
 103hrs
+
 <!-- monthly -->
+
 Previous - 128hrs
+
 <!-- monthly -->
 
     Play 1hr

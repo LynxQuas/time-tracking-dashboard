@@ -2,15 +2,12 @@ import MainCard from "./MainCard";
 import SideCard from "./SideCard";
 
 import "./container.css";
-const Container = () => {
+const Container = (props) => {
   return (
     <div className="container">
-      <SideCard />
-      <SideCard />
-      <SideCard />
-      <SideCard />
-      <SideCard />
-      <SideCard />
+      {props.data.map((item) => {
+        return <SideCard title={item.title} timeframe={item.timeframes} />;
+      })}
     </div>
   );
 };
