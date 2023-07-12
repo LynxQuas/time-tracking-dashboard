@@ -1,12 +1,11 @@
 import "./maincard.css";
-import image from "../images/image-jeremy.png";
 
 const MainCard = () => {
   return (
     <div className="maincard__container">
       <div className="maincard">
         <div className="img__container">
-          <img src={image} className="image" />
+          <img src="./assets/image-jeremy.png" className="image" />
         </div>
 
         <div className="user__info">
