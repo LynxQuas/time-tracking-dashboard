@@ -1,0 +1,52 @@
+.sidecard__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  position: relative;
+}
+.work__logo {
+  position: absolute;
+  width: 3rem;
+  left: 70%;
+}
+.sidecard {
+  width: 100%;
+  border-radius: 0.7rem 0.7rem 0 0;
+  height: 3rem;
+  background-color: hsl(15, 100%, 70%);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidecard__lower {
+  display: flex;
+  width: 100%;
+  color: white;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 0.7rem;
+  margin-top: -1rem;
+  gap: 2em;
+  z-index: 1;
+}
+
+.text__container {
+  line-height: 2rem;
+}
+
+.hours {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  color: hsl(235, 45%, 61%);
+}

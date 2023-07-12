@@ -1,0 +1,29 @@
+.maincard__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+}
+
+.maincard {
+  display: flex;
+  width: 100%;
+  color: white;
+  flex-direction: column;
+  padding: 7rem 1.5rem;
+  background-color: hsl(246, 80%, 60%);
+  overflow: visible;
+  z-index: 1;
+  border-radius: 0.7rem;
+}
+
+.maincard__lower {
+  margin-top: -1rem;
+  background-color: hsl(235, 46%, 20%);
+  width: 100%;
+  padding: 2rem 1rem;
+  color: hsl(235, 45%, 61%);
+  line-height: 2.8rem;
+  border-radius: 0 0 0.7rem 0.7rem;
+}
